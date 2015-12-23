@@ -1,0 +1,68 @@
+\documentclass[senior,final,11pt]{iscs-thesis}
+
+\etitle{A Method of Improving QoS:  Explorations of the Possibility of Function Combinations in Service Compositions}
+\jtitle{品質改良のアプローチ：機能のぶれを許すサービス合成}
+%
+\eauthor{Ziyuan Wang}
+\jauthor{王子源}
+\esupervisor{Shinichi Honiden}
+\jsupervisor{本位田真一}
+\supervisortitle{Professor} % Professor, etc.
+\date{February 9, 2016}
+%-------------------
+\begin{document}
+\begin{eabstract}
+There is a growing need for web service providers to develop customised and flexible web services as quick as they can. One way to satisfy this demand is to utilise service compositions, which provide a method of consolidating several services to a richer service. Because of the uncertainty in the feasibility of the functional and QoS requirements, it is not guaranteed that service compositions succeed with suitable solutions.
+
+One way to satisfy the given requirements is to control the given two kinds of requirements. There have been studies on methods of optimising the QoS with fixed functional requirements. However, the search space in that case is limited, which would possibly not include service compositions with better QoS whose functions are slightly different from the required one. Therefore, I focus on the possibility of improving the QoS by compromising on functions or exploring the possibility of function combinations. This enables better advice of service compositions to users. In this article, I propose a method of efficiently searching different possibilities to support users to balance functional requirements and QoS requirements.
+\end{eabstract}
+\begin{jabstract}
+近年，ウェブサービスプロバイダーにとって，ユーザーの好みに合わせた，柔軟なウェブサービスを短時間で作る必要性が増してきている．そのために，よく使われている手法として，複数のサービスを一つにまとめてより高機能なサービスを作るサービス合成と呼ばれる手法がある．サービス合成において，入力として受け取る機能や品質に関する要求を必ず満たせるとは限らないという問題がある．
+
+機能と品質の両方を達成するために既存研究で提案されている手法として，その片方を固定して保証し，もう片方を最適化するというものがある．しかし，この手法では，機能を固定するために，探索空間が限られているため，
+要求された機能に妥協を許した場合に品質が大きく高まるような合成を見逃す可能性がある．よって，本論文では，ユーザーが高品質の合成を見つけることがより容易になるよう，機能を妥協し，要求された機能と少しのぶれを許すことで探索空間を増やすことによるQoSの最適化の可能性について議論した．本論文では，ユーザーが機能要求と品質要求のバランスを取れるように効率的に様々な合成の可能性を探索する手法を提案した．
+
+\end{jabstract}
+\maketitle
+
+\begin{acknowledge}
+I appreciate Prof. Ishikawa's help in improving the structure of the paper.
+\end{acknowledge}
+
+\frontmatter 
+\tableofcontents
+%\listoffigures
+%\listoftables 
+%\lstlistoflistings
+%-------------------
+\mainmatter 
+
+\chapter{INTREODUCTION}
+
+\section{Background}
+\section{Goals}
+\section{Contributions}
+\cite{4065825}. 
+%-------------------
+\chapter{PRELIMINARIES}
+
+\section{Service Composition}
+\subsection{Services}
+\subsection{Workflows}
+%-------------------
+\chapter{RELATED WORK}
+
+%-------------------
+\chapter{APPROACH}
+
+%-------------------
+\chapter{EVALUATION}
+
+%-------------------
+\chapter{CONCLUSION}
+
+%-------------------
+\bibliographystyle{plain} 
+\bibliography{myref} 
+%-------------------
+\end{document}
