@@ -62,26 +62,50 @@ Chapter 2 describes ... Chapter 3...
 ~~~~This section defines some key terms of formal research of the service composition that I continue to use in this paper.
 \section{Service}
 %所\UTF{8C13}service，就是功能可重\UTF{590D}利用的
-~~~~A service S is a reusable system that provides functionalities which are documented in a service description. This description defines a 5-tuple {\em IOPEQ = (S.I, S.O, S.P, S.E, S.Q)} where {\em S.I, S.O} are abbreviated from the required input and output paremeters of the S, {\em S.P, S.E} are the preconditions and effects which means the necessary condition of utilising S and the consequence after running S, and {\em S.Q} is the set of the QoS attributes of the S. \\
-~~~~In this paper, {\em S.P, S.E} are ignored therefore 5-tuple are model only with 3-tuple {\em IOQ}.
+~~~~A service S is a reusable system that provides functionalities which are documented in a service description. This description defines a 5-tuple {\em IOPEQ = (S.I, S.O, S.P, S.E, S.Q)} where {\em S.I, S.O} are abbreviated from the required inputs and outputs of the S, {\em S.P, S.E} are the preconditions and effects which denote the necessary condition of utilising S and the consequence after running S, and {\em S.Q} is the set of the QoS attributes of the S. \\
+%\UTF{5173}于service，一般分成service(instance)和service task\UTF{4E24}\UTF{79CD}\UTF{8BF4}法。service task
+~~~~In this paper, {\em S.P, S.E} are ignored therefore a service S is modelled only with 3-tuple {\em IOQ = (S.I, S.O, S.Q)}.
 %service (instance) and service task
 %IOPEs -> modelled only with IO in this paper
 %+ 
 %Q
 \section{QoS}
-multi-criteria
-normalized
+~~~~QoS is abbreviated from quality-of-service, that is, quality apart from the functionality the service can provides, such as the price, the execution time and the reliability of the service.
+The S.Q of a service S is consist of a number of QoS attributes which is normalized between 0 and 1, with 0 being the worst and 1 being the best.
+%multi-criteria
+%normalized
 
-\section{Functional Compliance}
-Connectivity between two services
+\section{Service Compliance}
+%Connectivity between two services
+~~~~If there exists an output {\em o} $\in$ {\em S.O} of a service S is compatible with an input of {\em i}  $\in$ {\em S'.I} of another service S', we say there is a service link between S and S', written as S $\to$ S'. That is, the type of {\em o} is the same or a subtype of i. \\
+~~~~In this paper, a service is constrained to has only one input and one output, therefore S $\to$ S' iff:
+\begin{center}
+{\em o} = {\em S.O} ,  {\em i} = {\em S'.I} ,  {\em o} $\in$ {\em i}
+\end{center}
 
-def: strong/weak
+\section{I/O Plug-in match}
+%我\UTF{4EEC}可以根据input或者output的兼容\UTF{5173}系来\UTF{7ED9}\UTF{4E24}个差不多功能的
+~~~~Two functionality similar services, in this paper that denotes they are in the same task, may have two relations, defined as follow.\\
+~~~~An Input Plug-in match $\sqsubseteq$ is a S $\times$ S relation that holds iff:
+\begin{center}
+S $\sqsubseteq$ S'  $\Leftrightarrow$ {\em S.I} $\in$ {\em S'.I}
+\end{center}
+~~~~In this paper, S $\sqsubseteq$ S' is referred to as S' is input-stronger than S, and S is input-weaker than S'.\\
+~~~~An Output Plug-in match $\subset$ is a S $\times$ S relation that holds iff:
+\begin{center}
+S $\subset$ S' $\Leftrightarrow$ {\em S.I} $\in$ {\em S'.I}
+\end{center}
+
+In this paper, S $\subset$ S' is referred to as S' is output-stronger than S, and S is output-weaker than S'.\\
+
 
 \section{Workflow}
-Workflow templates: sequence of service tasks
-Workflow: sequence of services (service instances)
+~~~~A workflow is a sequence of two or more linked services. The functions of a workflow depend on function combinations that consist of the input parameter of the workflow's first service and the output parameter of the workflow's last service. A workflow template contains service tasks instead of actual services. A task is characterised as an abstract functionality which can be replaced by an actual service. There are generally two ways to assign services to a task, one is to compare the functions of the services with the functional requirements of the task. The other is to collect services depend on documents such as service description, which are usually distributed with the service by provider. Finally, each task is assigned with a set of services which meet the functional requirements of the task.
 
-Functional requirements: ぶれなし (existing)
+Selection algorithms receive a workflow template with fixed functional requirement and a dozens of services, and select for each task of one or more services which guarantee the obtained workflow's QoS are optimised, then return the obtained workflow as an output.
+
+%Figure 1 shows an example workflow template and a possible service selection.
+%Functional requirements: ぶれなし (existing)
 
 \section{QoS optimization}
 this time single-objective

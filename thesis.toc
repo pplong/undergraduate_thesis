@@ -5,21 +5,22 @@
 \contentsline {chapter}{\numberline {2}Preliminary}{2}
 \contentsline {section}{\numberline {2.1}Service}{2}
 \contentsline {section}{\numberline {2.2}QoS}{2}
-\contentsline {section}{\numberline {2.3}Functional Compliance}{2}
-\contentsline {section}{\numberline {2.4}Workflow}{2}
-\contentsline {section}{\numberline {2.5}QoS optimization}{2}
-\contentsline {chapter}{\numberline {3}Extended Composition Problem}{3}
-\contentsline {chapter}{\numberline {4}Algorithm for Extended Composition Problem}{4}
-\contentsline {subsection}{\numberline {4.0.1}Functionality Graph}{4}
-\contentsline {subsection}{\numberline {4.0.2}Skyline}{4}
-\contentsline {subsection}{\numberline {4.0.3}Naive Algorithm}{4}
-\contentsline {subsection}{\numberline {4.0.4}Algorithm}{4}
-\contentsline {chapter}{\numberline {5}Experiments}{5}
-\contentsline {section}{\numberline {5.1}Implementation}{5}
-\contentsline {section}{\numberline {5.2}Extended Composition Problem}{5}
-\contentsline {section}{\numberline {5.3}Algorithm}{5}
-\contentsline {chapter}{\numberline {6}Discussion}{6}
-\contentsline {subsection}{\numberline {6.0.1}Proposal}{6}
-\contentsline {subsection}{\numberline {6.0.2}Future Work}{6}
-\contentsline {chapter}{\numberline {7}Conclusion}{7}
-\contentsline {chapter}{References}{8}
+\contentsline {section}{\numberline {2.3}Service Compliance}{2}
+\contentsline {section}{\numberline {2.4}I/O Plug-in match}{2}
+\contentsline {section}{\numberline {2.5}Workflow}{3}
+\contentsline {section}{\numberline {2.6}QoS optimization}{3}
+\contentsline {chapter}{\numberline {3}Extended Composition Problem}{4}
+\contentsline {chapter}{\numberline {4}Algorithm for Extended Composition Problem}{5}
+\contentsline {subsection}{\numberline {4.0.1}Functionality Graph}{5}
+\contentsline {subsection}{\numberline {4.0.2}Skyline}{5}
+\contentsline {subsection}{\numberline {4.0.3}Naive Algorithm}{5}
+\contentsline {subsection}{\numberline {4.0.4}Algorithm}{5}
+\contentsline {chapter}{\numberline {5}Experiments}{6}
+\contentsline {section}{\numberline {5.1}Implementation}{6}
+\contentsline {section}{\numberline {5.2}Extended Composition Problem}{6}
+\contentsline {section}{\numberline {5.3}Algorithm}{6}
+\contentsline {chapter}{\numberline {6}Discussion}{7}
+\contentsline {subsection}{\numberline {6.0.1}Proposal}{7}
+\contentsline {subsection}{\numberline {6.0.2}Future Work}{7}
+\contentsline {chapter}{\numberline {7}Conclusion}{8}
+\contentsline {chapter}{References}{9}
