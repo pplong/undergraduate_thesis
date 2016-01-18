@@ -38,28 +38,119 @@ I appreciate Prof. Ishikawa's help in improving the structure of the paper.
 \mainmatter 
 
 \chapter{INTREODUCTION}
-
+Web service, service-based system, and service composition are significant.
+%ws 基于service的系\UTF{7EDF} 和service合成是很重要的
+A lot of existing studies on QoS-aware service composition.
+%介\UTF{7ECD}下上面提到的几个名\UTF{8BCD}，\UTF{8BA8}\UTF{8BBA}下它\UTF{4EEC}的来\UTF{9F99}去脉 
+Fixed functional requirements -> may lose potential improvement of QoS, difficulty for users to properly define the functional requirements because of uncertainty of the feasibility of requirements given available services
+%\UTF{8BA8}\UTF{8BBA}它\UTF{4EEC}的不好，固定fun\UTF{5BFC}致没法找到更好的qos
+Tis paper ... (summary of the remainder).
+%本文的主\UTF{9898}，干了什\UTF{4E48}。
+Chapter 2 describes ... Chapter 3...
+%\UTF{6BCF}一章做了什\UTF{4E48}%
 \section{Background}
+%背景
 \section{Goals}
+%我\UTF{4EEC}的目的
 \section{Contributions}
+%本文的\UTF{8D21}献
 \cite{4065825}. 
 %-------------------
-\chapter{PRELIMINARIES}
+\chapter{Preliminary}%1-18------------------------
+%已有的定\UTF{4E49}%
+Existing definitions.
 
-\section{Service Composition}
-\subsection{Services}
-\subsection{Workflows}
-%-------------------
-\chapter{RELATED WORK}
+\section{Service}
+%所\UTF{8C13}service，就是功能可重\UTF{590D}利用的
+A service S is a reusable system that provides functionalities which are documented in a service description. This description defines a 5-tuple \em{(S.I, S.O, S.P, S.E, S.Q)} where \em{S.I, S.O} are abbreviated from the required input and output paremeteres of the S, S.P and S.E are the preconditions and effects which means the necessary condition of utilising S and the consequence after running S, and S.Q is the set of the QoS attributes of S. 
+service (instance) and service task
+IOPEs -> modelled only with IO in this paper
++ 
+Q
+\section{QoS}
+multi-criteria
+normalized
+
+\section{Functional Compliance}
+Connectivity between two services
+
+def: strong/weak
+
+\section{Workflow}
+Workflow templates: sequence of service tasks
+Workflow: sequence of services (service instances)
+
+Functional requirements: ぶれなし (existing)
+
+\section{QoS optimization}
+this time single-objective
 
 %-------------------
-\chapter{APPROACH}
+\chapter{Extended Composition Problem}: Proposal1
 
-%-------------------
-\chapter{EVALUATION}
+motivation again
 
-%-------------------
-\chapter{CONCLUSION}
+%ぶれありのcomposition problem定義
+%def. 何段階ずれてもよい
+(actually, not so meaningful to use too weak services)
+
+
+\chapter{Algorithm for Extended Composition Problem}: Proposal 2
+
+%%% Design 1
+\subsection{Functionality Graph}
+From [Wagner'11]
+def.
+algorithm
+
+\subsection{Skyline}
+def.
+algorithm
+
+\subsection{Naive Algorithm}
+%for all 機能のぶれ (same, IN_one_weak-OUT_same, IN_same-OUT_one_weak, ...)
+ % solve
+
+\subsection{Algorithm}
+% ぶれの探索順序をソート -> ランダム，強い順，弱い順
+%for all 機能のぶれ (same, IN_one_weak-OUT_same, IN_same-OUT_one_weak, ...)
+ % if (これまでに求めた最適解が，今回も使えるなら)
+ %   それをreturn
+ % solve(前回の探索結果) // さらに再利用？
+
+\chapter{Experiments}
+
+\section{Implementation}
+Implemented with Python.
+
+\section{Extended Composition Problem}
+Evaluation of Proposal 1
+How QoS can be improved by allowing compromise in functional requirements?
+
+\section{Algorithm}
+Evaluation of Proposal 2
+How fast can the proposed algorithm solve the extended problem?
+- with skyline vs. without skyline
+- with skyline vs. proposed algorithm with skyline
+
+
+\chapter{Discussion}
+
+% related work can come here
+
+\subsection{Proposal}
+The extended problem should be significant because in the experiment
+
+The proposed algorithm made good improvement because in the experiment 
+
+% if difficult, combine to the experiment chapter
+
+\subsection{Future Work}
+- QoS constraints
+- adaptive
+
+
+\chapter{Conclusion}
 
 %-------------------
 \bibliographystyle{plain} 
