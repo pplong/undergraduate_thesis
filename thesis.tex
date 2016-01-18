@@ -58,15 +58,16 @@ Chapter 2 describes ... Chapter 3...
 %-------------------
 \chapter{Preliminary}%1-18------------------------
 %已有的定\UTF{4E49}%
-Existing definitions.
-
+%Existing definitions.
+~~~~This section defines some key terms of formal research of the service composition that I continue to use in this paper.
 \section{Service}
 %所\UTF{8C13}service，就是功能可重\UTF{590D}利用的
-A service S is a reusable system that provides functionalities which are documented in a service description. This description defines a 5-tuple \em{(S.I, S.O, S.P, S.E, S.Q)} where \em{S.I, S.O} are abbreviated from the required input and output paremeteres of the S, S.P and S.E are the preconditions and effects which means the necessary condition of utilising S and the consequence after running S, and S.Q is the set of the QoS attributes of S. 
-service (instance) and service task
-IOPEs -> modelled only with IO in this paper
-+ 
-Q
+~~~~A service S is a reusable system that provides functionalities which are documented in a service description. This description defines a 5-tuple {\em IOPEQ = (S.I, S.O, S.P, S.E, S.Q)} where {\em S.I, S.O} are abbreviated from the required input and output paremeters of the S, {\em S.P, S.E} are the preconditions and effects which means the necessary condition of utilising S and the consequence after running S, and {\em S.Q} is the set of the QoS attributes of the S. \\
+~~~~In this paper, {\em S.P, S.E} are ignored therefore 5-tuple are model only with 3-tuple {\em IOQ}.
+%service (instance) and service task
+%IOPEs -> modelled only with IO in this paper
+%+ 
+%Q
 \section{QoS}
 multi-criteria
 normalized
