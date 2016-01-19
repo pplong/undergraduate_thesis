@@ -19,8 +19,8 @@
 \contentsline {section}{\numberline {5.1}Implementation}{6}
 \contentsline {section}{\numberline {5.2}Extended Composition Problem}{6}
 \contentsline {section}{\numberline {5.3}Algorithm}{6}
-\contentsline {chapter}{\numberline {6}Discussion}{8}
-\contentsline {subsection}{\numberline {6.0.1}Proposal}{8}
-\contentsline {subsection}{\numberline {6.0.2}Future Work}{8}
-\contentsline {chapter}{\numberline {7}Conclusion}{9}
-\contentsline {chapter}{References}{10}
+\contentsline {chapter}{\numberline {6}Discussion}{9}
+\contentsline {subsection}{\numberline {6.0.1}Proposal}{9}
+\contentsline {subsection}{\numberline {6.0.2}Future Work}{9}
+\contentsline {chapter}{\numberline {7}Conclusion}{10}
+\contentsline {chapter}{References}{11}

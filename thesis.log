@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015) (preloaded format=platex 2015.11.17)  19 JAN 2016 22:15
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015) (preloaded format=platex 2015.11.17)  19 JAN 2016 23:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -129,24 +129,31 @@ File: eval2.pdf Graphic file (type pdf)
 File: eval1.pdf Graphic file (type pdf)
  <eval1.pdf> [6
 
-] [7]
+]
+File: eval3-1.pdf Graphic file (type pdf)
+ <eval3-1.pdf>
+File: eval3-2.pdf Graphic file (type pdf)
+ <eval3-2.pdf> [7]
+File: eval3-3.pdf Graphic file (type pdf)
+ <eval3-3.pdf>
+[8]
 Chapter 6.
-[8
+[9
 
 ]
 Chapter 7.
-(./thesis.bbl [9
+(./thesis.bbl [10
 
-]) [10
+]) [11
 
 ] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 779 strings out of 493777
- 9540 string characters out of 6151333
+ 788 strings out of 493777
+ 9675 string characters out of 6151333
  69737 words of memory out of 5000000
- 4315 multiletter control sequences out of 15000+600000
+ 4318 multiletter control sequences out of 15000+600000
  15049 words of font info for 58 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  25i,5n,21p,823b,243s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (14 pages, 19712 bytes).
+Output written on thesis.dvi (15 pages, 20028 bytes).
