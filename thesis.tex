@@ -1,5 +1,5 @@
 \documentclass[senior,final,11pt]{iscs-thesis}
-
+\usepackage[dvipdfmx]{graphicx}
 \etitle{A Method of Improving QoS:  Explorations of the Possibility of Function Combinations in Service Compositions}
 \jtitle{品質改良のアプローチ：機能のぶれを許すサービス合成}
 %
@@ -104,17 +104,18 @@ In this paper, S $\subset$ S' is referred to as S' is output-stronger than S, an
 
 Selection algorithms receive a workflow template with fixed functional requirement and a dozens of services, and select for each task of one or more services which guarantee the obtained workflow's QoS are optimised, then return the obtained workflow as an output.
 
-%Figure 1 shows an example workflow template and a possible service selection.
+%Figure 1 shows an example workflow template and a possible service selection. may be add after
 %Functional requirements: ぶれなし (existing)
 
+
 \section{QoS optimization}
-this time single-objective
+%this time single-objective
 
 %-------------------
 \chapter{Extended Composition Problem}: Proposal1
 
-motivation again
-
+%motivation again
+%
 %ぶれありのcomposition problem定義
 %def. 何段階ずれてもよい
 (actually, not so meaningful to use too weak services)
@@ -122,7 +123,6 @@ motivation again
 
 \chapter{Algorithm for Extended Composition Problem}: Proposal 2
 
-%%% Design 1
 \subsection{Functionality Graph}
 From [Wagner'11]
 def.
@@ -136,7 +136,7 @@ algorithm
 %for all 機能のぶれ (same, IN_one_weak-OUT_same, IN_same-OUT_one_weak, ...)
  % solve
 
-\subsection{Algorithm}
+\subsection{Algorithm}%\UTF{641E}个牛逼的名字
 % ぶれの探索順序をソート -> ランダム，強い順，弱い順
 %for all 機能のぶれ (same, IN_one_weak-OUT_same, IN_same-OUT_one_weak, ...)
  % if (これまでに求めた最適解が，今回も使えるなら)
@@ -149,15 +149,19 @@ algorithm
 Implemented with Python.
 
 \section{Extended Composition Problem}
-Evaluation of Proposal 1
+Evaluation of Proposal 1\\
 How QoS can be improved by allowing compromise in functional requirements?
+\[\includegraphics[width=13cm]{eval2.pdf}\]
 
 \section{Algorithm}
-Evaluation of Proposal 2
-How fast can the proposed algorithm solve the extended problem?
-- with skyline vs. without skyline
-- with skyline vs. proposed algorithm with skyline
+Evaluation of Proposal 2\\
+How fast can the proposed algorithm solve the extended problem?\\
+- with skyline vs. without skyline\\
+Fig. x depicts the relationship of step numbers between full search and skyline algorithm.
+\[\includegraphics[width=13cm]{eval1.pdf}\]
+By further calculation, the correlation between them is measured to be 0.1814083, which demonstrate the existence of weak correlation.
 
+- with skyline vs. proposed algorithm with skyline
 
 \chapter{Discussion}
 
