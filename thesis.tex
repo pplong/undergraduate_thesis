@@ -98,6 +98,7 @@ S $\subset$ S' $\Leftrightarrow$ {\em S.I} $\in$ {\em S'.I}
 
 In this paper, S $\subset$ S' is referred to as S' is output-stronger than S, and S is output-weaker than S'.\\
 
+\section{Functional requirements}
 
 \section{Workflow}
 ~~~~A workflow is a sequence of two or more linked services. The functions of a workflow depend on function combinations that consist of the input parameter of the workflow's first service and the output parameter of the workflow's last service. A workflow template contains service tasks instead of actual services. A task is characterised as an abstract functionality which can be replaced by an actual service. There are generally two ways to assign services to a task, one is to compare the functions of the services with the functional requirements of the task. The other is to collect services depend on documents such as service description, which are usually distributed with the service by provider. Finally, each task is assigned with a set of services which meet the functional requirements of the task.
@@ -108,45 +109,85 @@ Selection algorithms receive a workflow template with fixed functional requireme
 %Functional requirements: ぶれなし (existing)
 
 
-\section{QoS optimization}
+\section{QoS optimization}%有空找找看\UTF{7C7B}似的。\UTF{8BF4}好我\UTF{4EEC}\UTF{8FD9}里是不考\UTF{8651}QoS限制的
 %this time single-objective
+\section{Service composition}
+\chapter{Related  work}
+%今天决定要写几个，可以从之前的\UTF{8BBA}文中\UTF{9009} 1000字
+
 
 %-------------------
-\chapter{Extended Composition Problem}: Proposal1
+\chapter{Approach}%1-20
+%（\UTF{8FD9}里\UTF{641E}点\UTF{56FE}\UTF{554A}）。我的approach被\UTF{56FE}？表示出来。
+%我\UTF{4EEC}在下一个section中介\UTF{7ECD}了\UTF{8FD9}\UTF{6837}paper主要研究的\UTF{95EE}\UTF{9898}的定\UTF{4E49}（\UTF{56FE}）。
+%在第二个section我\UTF{4EEC}介\UTF{7ECD}了解决上述\UTF{95EE}\UTF{9898}的具体算法。第一，我\UTF{4EEC}在section？？中先解\UTF{91CA}下如何将\UTF{6BCF}一个task中的service\UTF{4EEC}clustering化。clustering化的好\UTF{5904}有\UTF{5565}？clustering之后，相\UTF{5BF9}于一\UTF{5F20}task就能有一\UTF{5F20}“地\UTF{56FE}”，可以在之后的skyline算法的\UTF{65F6}候参照它利用它。第二，我\UTF{4EEC}在subsection？？中介\UTF{7ECD}了skyline的算法。比起用全探索，skyline算法可以有效地\UTF{51CF}少\UTF{8BA1}算量，\UTF{8FD9}\UTF{8BA9}整个系\UTF{7EDF}的可行性大大\UTF{589E}加，我\UTF{4EEC}之后的\UTF{8BA1}算都是基于skyline算法的。第三，我\UTF{4EEC}在第subsection？？中介\UTF{7ECD}了naive algorithm，它在skyline算法的基\UTF{7840}上，\UTF{7B80}\UTF{5355}地将9\UTF{79CD}可能的bure情况分\UTF{522B}\UTF{8FD0}算，然后根据得到的9个\UTF{7ED3}果，互相比\UTF{8F83}之后得出最好的\UTF{7ED3}果后\UTF{7ED9}用\UTF{6237}\UTF{8FDB}行推荐。第四，我\UTF{4EEC}在subsection？？中介\UTF{7ECD}了development algorithm，它在naive的基\UTF{7840}上改\UTF{8FDB}了算法，\UTF{7B80}\UTF{5355}来\UTF{8BF4}，根据是否\UTF{62E5}有相同\UTF{5F00}\UTF{5934}来将9\UTF{79CD}可能分成3\UTF{7EC4}，一\UTF{7EC4}3\UTF{79CD}可能。比起naive algorithm，它也有效地\UTF{51CF}少了\UTF{8BA1}算量
+
+\section{Extended Composition Problem}: Proposal1 %1-20 bure\UTF{95EE}\UTF{9898}的定\UTF{4E49}%
+%就如同我之前在section。。所提到的，由于 能否\UTF{6EE1}足funcitonal requirements\UTF{8FD9}件事并不是那\UTF{4E48}明\UTF{663E}  所以\UTF{4E25}格将用\UTF{6237}所提出的funcitonal requirements作\UTF{4E3A}service composition system的\UTF{8F93}入的\UTF{8BDD}，会存在\UTF{6EE1}足功能的workflow不存在，或者是 由于探索空\UTF{95F4}的不足而\UTF{5BFC}致找不到真正最\UTF{4F18}qos的workflow的情况出\UTF{73B0}。我\UTF{4EEC}\UTF{9488}\UTF{5BF9}\UTF{8FD9}个\UTF{95EE}\UTF{9898}，提出了不\UTF{4EC5}探索fixed functional requirements，并且同\UTF{65F6}探索它的Bure 的解决方案。我\UTF{4EEC}首先引\UTF{8FDB}以下的定\UTF{4E49}%
+
+%%%\UTF{8FD9}段不用翻\UTF{8BD1}%
+%参照chapter2。。
+%\UTF{5BF9}于一个start service 它的Strong 集合 是在同一task中input stronger than it（但是不包含自己）
+%\UTF{5BF9}于一个start service 它的Weak集合是 在同一task中input weaker than it（但是不包含自己）。特\UTF{522B}的，one_weak集合是指，Weak中的 start service相\UTF{8FDE}接 的subset
+%\UTF{5BF9}于一个end service 它的Strong 集合 是在同一task中output stronger than it（但是不包含自己）
+%\UTF{5BF9}于一个end service 它的Weak集合是 在同一task中ouput weaker than it（但是不包含自己）。特\UTF{522B}的，one_weak集合是指，Weak中的 end service相\UTF{8FDE}接 的subset
+%\UTF{5BF9}于一群start或者end services的集合 \UTF{8FD9}个集合的Strong集合就是各个service的strong集合的并集，\UTF{8FD9}个集合的weak集合就是各个service的one_weak集合的并集（但是不包含自己）
+%%%\UTF{8FD9}段不用翻\UTF{8BD1}%
+
+%在QoS不降低的情况下提高多少程度的功能都是很\UTF{4E50}意被人看到的（be expected），但是如果qos提高是以功能的\UTF{51CF}弱\UTF{4E3A}代价的\UTF{8BDD}，那\UTF{4E48}\UTF{51CF}弱的程度必\UTF{987B}要有个限制(actually, not so meaningful to use too weak services)。this paper中，我\UTF{4EEC}只取功能降低一段（隣接）的weak，将功能的\UTF{51CF}弱控制在\UTF{8F83}低范\UTF{56F4}。
+%我\UTF{4EEC}\UTF{7EE7}\UTF{7EED}定\UTF{4E49}start／end services的bure：
+%bure:\UTF{5BF9}于一个fixed集合，它的Strong和one_weak和它自己的tuple定\UTF{4E49}\UTF{4E3A}bure（定\UTF{4E49}）
+%接下来我\UTF{4EEC}定\UTF{4E49}bure\UTF{95EE}\UTF{9898}：
+%\UTF{5BF9}于functional requirement = (fixed_start, fixed_end)，我\UTF{4EEC}不\UTF{4EC5}\UTF{4EC5}在原来的\UTF{95EE}\UTF{9898}\UTF{8BBE}定的基\UTF{7840}上（参考service composition）\UTF{8BA1}算它，\UTF{8FD8}\UTF{8BA1}算以start_bure  ＊ end_bure \UTF{4E3A}\UTF{5934}尾的function 的9\UTF{79CD}function中的剩余8\UTF{79CD}。然后\UTF{8F93}出（fixed,fixed）和 剩下8\UTF{79CD}中比它QoS高的
+
+
 
 %motivation again
-%
+
 %ぶれありのcomposition problem定義
 %def. 何段階ずれてもよい
-(actually, not so meaningful to use too weak services)
+%(actually, not so meaningful to use too weak services)
 
 
-\chapter{Algorithm for Extended Composition Problem}: Proposal 2
+\section{Algorithm for Extended Composition Problem}: Proposal 2%1-20 bure\UTF{95EE}\UTF{9898}的具体算法
+%我\UTF{4EEC}在\UTF{8FD9}个section中\UTF{8BF4}明\UTF{8FD9}\UTF{4E48}具体地，一\UTF{6B65}\UTF{6B65}地解决上面的\UTF{95EE}\UTF{9898}%
+\subsection{Functionality Graph}%\UTF{9636}\UTF{5C42}化
+%From [Wagner'11]
+%def.
+%algorithm
+%在[Wagner'11]中，它定\UTF{4E49}了functionality graph。如何\UTF{8BA1}算functional graph：将同一task中的services做\UTF{4E3A}\UTF{8F93}入，根据他\UTF{4EEC}之\UTF{95F4}的output的service Compliance\UTF{5173}系 ，（\UTF{8FD9}里改写下，直接英\UTF{8BED}）插入\UTF{4E24}\UTF{5F20}\UTF{56FE}（\UTF{4F2A}代\UTF{7801}可有可无，写\UTF{4F2A}代\UTF{7801}太\UTF{70E6}了）
+%
 
-\subsection{Functionality Graph}
-From [Wagner'11]
-def.
-algorithm
 
-\subsection{Skyline}
-def.
-algorithm
+\subsection{Skyline}%skyline 算是准\UTF{5907}工作
+%def.
+%algorithm
+%算法的意\UTF{4E49}，吃了什\UTF{4E48}吐了什\UTF{4E48}（文字）：
+%算法\UTF{4F2A}代\UTF{7801}：（先用手写）
+%算法的\UTF{8BF4}明
 
-\subsection{Naive Algorithm}
+\subsection{Naive Algorithm}%naive
+%能写的\UTF{5E94}\UTF{8BE5}不多，input output 重申一下，吐槽一下怎\UTF{4E48}怎\UTF{4E48}不行就走
 %for all 機能のぶれ (same, IN_one_weak-OUT_same, IN_same-OUT_one_weak, ...)
  % solve
 
-\subsection{Algorithm}%\UTF{641E}个牛逼的名字
-% ぶれの探索順序をソート -> ランダム，強い順，弱い順
-%for all 機能のぶれ (same, IN_one_weak-OUT_same, IN_same-OUT_one_weak, ...)
- % if (これまでに求めた最適解が，今回も使えるなら)
- %   それをreturn
- % solve(前回の探索結果) // さらに再利用？
+\subsection{Developed Algorithm}%\UTF{641E}个牛逼的名字
+%bure算法是基于naive算法的改\UTF{8FDB}算法。
+%\UTF{8865}上算法1-22写 1-21日已\UTF{7ECF}没\UTF{8111}子了
+
+
 
 \chapter{Experiments}
-
+%在\UTF{8FD9}一章，我\UTF{4EEC}主要介\UTF{7ECD}我\UTF{4EEC}的\UTF{5B9E}\UTF{9645}做的\UTF{5B9E}\UTF{9A8C}。
+%第一\UTF{8282}介\UTF{7ECD}了\UTF{5B9E}\UTF{9645}的\UTF{8FD0}行\UTF{73AF}境 和 具体的\UTF{8FD0}行\UTF{573A}景（10task10service，random QoS。random input output requirements . random input output compliance）
+%第二\UTF{8282}介\UTF{7ECD}了由bure\UTF{95EE}\UTF{9898}的\UTF{8BBE}定所能\UTF{5E26}来的好\UTF{5904}。介\UTF{7ECD}了\UTF{8BD5}\UTF{9A8C}方法并\UTF{8BC4}价了好\UTF{5904}的大小
+%第三\UTF{8282}介\UTF{7ECD}了\UTF{4E3A}了高速化我做出的\UTF{4E24}次功夫。并且通\UTF{8FC7}\UTF{5BF9}比step数 \UTF{8BC4}价了\UTF{6BCF}次\UTF{4F18}化快了多少。
 \section{Implementation}
 Implemented with Python.
+%本\UTF{5B9E}\UTF{9A8C}的実装部分的\UTF{73AF}境是python2.7。\UTF{8BC4}价部分的\UTF{73AF}境是R 3.2.3\UTF{6267}行的。
+%具体的基本\UTF{8BBE}定：正如同之前的prelimiar中所介\UTF{7ECD}的，是基于service composition中的selection 方法的\UTF{8BBE}定的。在\UTF{8FD9}里，我将work flow template \UTF{8BBE}定成由10个\UTF{5934}尾相接（1条直\UTF{7EBF}没有分支，一个output\UTF{5BF9}\UTF{5E94}着1个input）的task\UTF{7EC4}成，\UTF{6BCF}个task\UTF{62E5}有不同function不同qos的10个service。\UTF{6BCF}个service的qos都是由十个0到1之\UTF{95F4}的数\UTF{7EC4}\UTF{6784}成的vector\UTF{7EC4}成的。
+%怎\UTF{4E48}\UTF{5B9E}\UTF{9645}操作S.I S.O......，可以参考2012年的\UTF{8BBA}文（\UTF{5B9E}在不行可以修改之前的\UTF{8BBE}定）。由于考\UTF{8651}S.I S.O具体到底代表什\UTF{4E48}很耗\UTF{65F6}\UTF{95F4}并且并不是我\UTF{4EEC}\UTF{95EE}\UTF{9898}的核心，所以我\UTF{4EEC}直接考\UTF{8651}service之\UTF{95F4}的\UTF{8FDE}接情况。
+%\UTF{5BF9}于\UTF{6BCF}个service能\UTF{591F}\UTF{8FDE}接的下一个task中的service就是随机的，。\UTF{8FD9}\UTF{6837}可以解决除了start_task的input 的 end_task的output中的\UTF{9636}\UTF{7EA7}\UTF{5173}系  之外的\UTF{9636}\UTF{7EA7}\UTF{5173}系，\UTF{786E}定了除了start_task的  和end_task之外所有service的\UTF{8FDE}接情况。（因\UTF{4E3A}没有\UTF{8FDE}接到start_task的  和end_task能\UTF{8FDE}接的 service  的存在）。\UTF{8FD9}里\UTF{5BF9}于\UTF{8FD9}里的\UTF{9636}\UTF{7EA7}\UTF{5173}系的“\UTF{5F3A}弱”的界定并不是本文所\UTF{5173}心的，所以\UTF{5BF9}于start_task的input 的 end_task的output中的\UTF{9636}\UTF{7EA7}\UTF{5173}系也是随机决定的。决定方法如下：在本文中 ，\UTF{4E3A}了\UTF{8BBE}定方便， \UTF{53E6}外在start_task的之前和end_task之后\UTF{4F2A}造了\UTF{4E24}个task，根据他\UTF{4EEC}之\UTF{95F4}的\UTF{8FDE}接\UTF{5173}系\UTF{786E}定了 start_task的input 的 end_task的output中的\UTF{9636}\UTF{7EA7}\UTF{5173}系。一般\UTF{8BA4}\UTF{4E3A}input的\UTF{5F3A}指 可以接受的type多， output的\UTF{5F3A}指可以\UTF{8F93}出的type的多，反之\UTF{5219}弱。（\UTF{4E3E}个例子，input的“可以接受jpg和png”比“只可以接受jpg”要\UTF{5F3A}。output的“可以\UTF{8F93}出mp3或者mp4”比“只可以\UTF{8F93}出mp3”要\UTF{5F3A}，反之依然），其\UTF{5B9E}如同在prelimiar中提到的，\UTF{8FD8}可以参考文档之列的解决方法,但我就是任性不用。不爽去看2012年的\UTF{8BBA}文。
 
 \section{Extended Composition Problem}
 Evaluation of Proposal 1\\
@@ -159,7 +200,7 @@ How fast can the proposed algorithm solve the extended problem?\\
 - with skyline vs. without skyline\\
 Fig. x depicts the relationship of step numbers between full search and skyline algorithm.
 \[\includegraphics[width=13cm]{eval1.pdf}\]
-By further calculation, the correlation between them is measured to be 0.1814083, which demonstrate the existence of weak correlation.
+By further calculation, the correlation between them is measured to be 0.1814083, which demonstrate the existence of weak correlation.\\
 %step numbers 降到1/1992
 
 - with skyline vs. proposed algorithm with skyline
@@ -168,7 +209,6 @@ By further calculation, the correlation between them is measured to be 0.1814083
 \[\includegraphics[width=13cm]{eval3-3.pdf}\]
 
 \chapter{Discussion}
-
 % related work can come here
 
 \subsection{Proposal}
