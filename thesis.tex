@@ -99,6 +99,7 @@ S $\subset$ S' $\Leftrightarrow$ {\em S.I} $\in$ {\em S'.I}
 In this paper, S $\subset$ S' is referred to as S' is output-stronger than S, and S is output-weaker than S'.\\
 
 \section{Functional requirements}
+%用\UTF{6237}想要合成的大service的 功能，也就是\UTF{8F93}入type和\UTF{8F93}出type
 
 \section{Workflow}
 ~~~~A workflow is a sequence of two or more linked services. The functions of a workflow depend on function combinations that consist of the input parameter of the workflow's first service and the output parameter of the workflow's last service. A workflow template contains service tasks instead of actual services. A task is characterised as an abstract functionality which can be replaced by an actual service. There are generally two ways to assign services to a task, one is to compare the functions of the services with the functional requirements of the task. The other is to collect services depend on documents such as service description, which are usually distributed with the service by provider. Finally, each task is assigned with a set of services which meet the functional requirements of the task.
@@ -112,6 +113,8 @@ Selection algorithms receive a workflow template with fixed functional requireme
 \section{QoS optimization}%有空找找看\UTF{7C7B}似的。\UTF{8BF4}好我\UTF{4EEC}\UTF{8FD9}里是不考\UTF{8651}QoS限制的
 %this time single-objective
 \section{Service composition}
+%我用一下式子給service composition\UTF{8FDB}行一个原始的定\UTF{4E49}：
+%input：固定的workflow template 一群service, function requirements，output：最\UTF{4F18}的workflow
 \chapter{Related  work}
 %今天决定要写几个，可以从之前的\UTF{8BBA}文中\UTF{9009} 1000字
 
@@ -167,7 +170,7 @@ Selection algorithms receive a workflow template with fixed functional requireme
 %算法的\UTF{8BF4}明
 
 \subsection{Naive Algorithm}%naive
-%能写的\UTF{5E94}\UTF{8BE5}不多，input output 重申一下，吐槽一下怎\UTF{4E48}怎\UTF{4E48}不行就走
+%能写的\UTF{5E94}\UTF{8BE5}不多，input output 重申一下（注意 \UTF{8FD9}里的output是“方案”），吐槽一下怎\UTF{4E48}怎\UTF{4E48}不行就走
 %for all 機能のぶれ (same, IN_one_weak-OUT_same, IN_same-OUT_one_weak, ...)
  % solve
 
@@ -192,6 +195,24 @@ Implemented with Python.
 \section{Extended Composition Problem}
 Evaluation of Proposal 1\\
 How QoS can be improved by allowing compromise in functional requirements?
+%\UTF{8FD9}个\UTF{8BD5}\UTF{9A8C}的目的：How QoS can be improved by allowing compromise in functional requirements?
+%\UTF{8BC4}价\UTF{8BD5}\UTF{9A8C}\UTF{8BBE}\UTF{8BA1}：\UTF{8BA1}算了1000回（\UTF{8FD9}里\UTF{5BF9}回要有定\UTF{4E49}：将input集\UTF{9F50}，投入system\UTF{8FDB}行一次\UTF{8BA1}算叫做回，定\UTF{4E49}在service composition中），\UTF{5BF9}比\UTF{5BF9}象 1\UTF{8BA1}算固定functional requiments所得出的qos  2  9\UTF{79CD}不同情况的bure function下的qos。
+%得出的\UTF{7ED3}果如下\UTF{56FE}所示（\UTF{56FE}表）。#我\UTF{4EEC}可以看到8\UTF{79CD}情况的表\UTF{73B0}。\UTF{8FD9}\UTF{6837}看可能不直\UTF{89C2}。(可能不要，没多大用)
+
+%（考\UTF{8651}将\UTF{8FD9}个定\UTF{4E49}放在之前）如何\UTF{8BC4}价方案的好坏：将方案的所有“\UTF{9009}\UTF{62E9}” 比起fixed的改\UTF{8FDB}比例 相加，\UTF{8FD9}个数\UTF{503C}越高方案越好。
+
+%我\UTF{4EEC}根据\UTF{5BF9}bure的function的容忍程度 \UTF{8FDB}一\UTF{6B65}\UTF{5BF9}8\UTF{7EC4}的情况\UTF{8FDB}行情况的分\UTF{7C7B}。
+%第一\UTF{79CD}情况：只允\UTF{8BB8}\UTF{4E25}格意\UTF{4E49}上功能\UTF{589E}\UTF{5F3A}的bure集合。也就是只承\UTF{8BA4}(s,s),(s,f),(f,s)\UTF{8FD9}3\UTF{79CD}%
+%第二\UTF{79CD}情况：广\UTF{4E49}上功能\UTF{589E}\UTF{5F3A}的bure集合。比上面多承\UTF{8BA4}(s,o),(o,s)
+%第三\UTF{79CD}情况：允\UTF{8BB8}功能\UTF{51CF}弱的bure集合。比上面多承\UTF{8BA4}(o,o),(o,f),(f,o)
+%\UTF{8FD9}也可放前面介\UTF{7ECD}%
+
+%我\UTF{4EEC}看下 3\UTF{79CD}不同bure的表\UTF{73B0}。(插入\UTF{56FE})
+%可以看\UTF{89C1}随着\UTF{5BF9}bure的程度的容忍度 \UTF{589E}加，越容易得到改\UTF{8FDB}方案，并且改\UTF{8FDB}方案的\UTF{8D28}量也会\UTF{589E}加。
+
+
+
+
 \[\includegraphics[width=13cm]{eval2.pdf}\]
 
 \section{Algorithm}
@@ -201,9 +222,13 @@ How fast can the proposed algorithm solve the extended problem?\\
 Fig. x depicts the relationship of step numbers between full search and skyline algorithm.
 \[\includegraphics[width=13cm]{eval1.pdf}\]
 By further calculation, the correlation between them is measured to be 0.1814083, which demonstrate the existence of weak correlation.\\
-%step numbers 降到1/1992
+%我\UTF{4EEC}可以看到step numbers 降到1/1992，（再加一个\UTF{65F6}\UTF{95F4}\UTF{56FE}）。
+%further eval：有\UTF{4E24}个\UTF{53D8}量。task数和workflow数（算了 之后再考\UTF{8651} 估\UTF{8BA1}没\UTF{65F6}\UTF{95F4}。2月\UTF{4EFD}做\UTF{5427}）
+%全探索的探索空\UTF{95F4}是task内的services数 的 task\UTF{603B}数次方。
+%skyline之后的探索空\UTF{95F4}是（skyline之后的task内的services数）。。有点算不出来。要\UTF{8BBE}\UTF{8BA1}\UTF{5B9E}\UTF{9A8C}的\UTF{8BDD}：1 保持task数不\UTF{53D8} \UTF{589E}加\UTF{6BCF}个task内的services数 2 保持task内的service不\UTF{53D8}，\UTF{589E}加task的\UTF{603B}数
 
 - with skyline vs. proposed algorithm with skyline
+%\UTF{8FD9}里想\UTF{529E}法\UTF{7F29}成一幅\UTF{56FE}。或者按照老\UTF{5E08}的\UTF{8BF4}法 做成worst best average\UTF{56FE}。无\UTF{8BBA}如何 算一个\UTF{65F6}\UTF{95F4}\UTF{5427}。（将写写入去掉 只\UTF{8BA1}算\UTF{65F6}\UTF{95F4}（将\UTF{65F6}\UTF{95F4}\UTF{8F93}出到csv中 ），今天\UTF{665A}上\UTF{8DD1}）
 \[\includegraphics[width=13cm]{eval3-1.pdf}\]
 \[\includegraphics[width=13cm]{eval3-2.pdf}\]
 \[\includegraphics[width=13cm]{eval3-3.pdf}\]
