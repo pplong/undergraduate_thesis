@@ -39,20 +39,64 @@ I appreciate Prof. Ishikawa's help in improving the structure of the paper.
 
 \chapter{INTREODUCTION}
 Web service, service-based system, and service composition are significant.
-%ws 基于service的系\UTF{7EDF} 和service合成是很重要的
-A lot of existing studies on QoS-aware service composition.
-%介\UTF{7ECD}下上面提到的几个名\UTF{8BCD}，\UTF{8BA8}\UTF{8BBA}下它\UTF{4EEC}的来\UTF{9F99}去脉 
-Fixed functional requirements -> may lose potential improvement of QoS, difficulty for users to properly define the functional requirements because of uncertainty of the feasibility of requirements given available services
-%\UTF{8BA8}\UTF{8BBA}它\UTF{4EEC}的不好，固定fun\UTF{5BFC}致没法找到更好的qos
-Tis paper ... (summary of the remainder).
-%本文的主\UTF{9898}，干了什\UTF{4E48}。
-Chapter 2 describes ... Chapter 3...
-%\UTF{6BCF}一章做了什\UTF{4E48}%
+
+%Web service:
+
+%随着互\UTF{8054}网的迅猛\UTF{53D1}展和广泛\UTF{5E94}用，Web服\UTF{52A1}作\UTF{4E3A}部署在互\UTF{8054}网上的\UTF{7EC4}件,展\UTF{73B0}出良好的封装性、松\UTF{8026}合性以及跨平台性。越来越多的\UTF{5F00}\UTF{53D1}者将他\UTF{4EEC}做的serivce\UTF{53D1}布到个人网站或者\UTF{7C7B}似于amazon的平台，以期待\UTF{8BA9}\UTF{522B}人无\UTF{507F}或者有\UTF{507F}地使用，因此,Web服\UTF{52A1}成\UTF{4E3A}了人\UTF{4EEC}\UTF{5173}注的焦点。
+
+%service-based system:
+
+%service-based system 地主要目的 通\UTF{8FC7}\UTF{6784}筑一个通用的、与平台和\UTF{8BED}言无\UTF{5173}的技\UTF{672F}\UTF{5C42}，使得各\UTF{79CD}不同平台上的\UTF{5E94}用系\UTF{7EDF}\UTF{95F4}，\UTF{5B9E}施彼此的\UTF{8FDE}接和集成。
+%近年来,互\UTF{8054}网上出\UTF{73B0}的Web服\UTF{52A1}越来越多, 企業間の商取引を担う大規模なものから、単一の機能を持ったコンポーネント（ソフトウェア部品）まで、様々な規模・種類のものがある。
+
+%service composition:
+%\UTF{5355}一web service的\UTF{95EE}\UTF{9898}\UTF{95EE}\UTF{9898}%
+%但是\UTF{5355}一的Web服\UTF{52A1}所提供的功能有限,因此需要把已有的Web服\UTF{52A1}\UTF{7EC4}合起来,生成\UTF{6EE1}足用\UTF{6237}需求的\UTF{7EC4}合服\UTF{52A1}。在服\UTF{52A1}\UTF{7EC4}合\UTF{8FC7}程中,如何根据用\UTF{6237}\UTF{8F93}入信息快速地找出相\UTF{5173}Web服\UTF{52A1}生成\UTF{7EC4}合服\UTF{52A1}成\UTF{4E3A}了服\UTF{52A1}\UTF{7EC4}合的\UTF{5173}\UTF{952E}\UTF{95EE}\UTF{9898}。
+%做\UTF{4E3A}一\UTF{79CD}有效的解决方法，
+
+%Service compositions are widely used in industry and research in order to create a functional richer loosely coupled service quickly. 
+
+%service compostions的用途和\UTF{96BE}点
+%service compositions 一般有\UTF{4E24}\UTF{79CD}，一\UTF{79CD}是，没有workflow template做\UTF{4E3A}模版 ，重\UTF{89C6}能否得到一个可能的workflow，也就是一个可行的合成建\UTF{8BAE}，而忽略non\UTF{FF0D}funtional （也就是qos）的好坏的planning algorithm。一\UTF{79CD}是将固定的workflow template作\UTF{4E3A}\UTF{8F93}入，重\UTF{89C6}最\UTF{4F18}化qos的selection algorithm。
+%而在本\UTF{8BBA}文中，我\UTF{4EEC}主要研究能\UTF{591F}更精\UTF{786E}得到\UTF{7ED3}果的后者，基于 QoS 的 Web 服\UTF{52A1}\UTF{9009}\UTF{62E9}\UTF{95EE}\UTF{9898}。
 \section{Background}
-%背景
-\section{Goals}
+
+%因\UTF{4E3A}， 参与合成的service  一般具有不同 QoS 参数 ( 如\UTF{6267}行\UTF{65F6}\UTF{95F4}、服\UTF{52A1}\UTF{8D39}用、可用性、可 靠性、安全性、声誉等) 的候\UTF{9009}服\UTF{52A1},\UTF{8FD9}些候\UTF{9009}服\UTF{52A1}具有相似但又不尽相同的功 能属性和不同非功能属性 ，所以如何高效\UTF{52A8}\UTF{6001}地把\UTF{73B0}存的各\UTF{79CD} Web 服\UTF{52A1}聚合起来以形成新的\UTF{6EE1}足不同用\UTF{6237}的 功能需求 和 QoS需求 的\UTF{590D} \UTF{6742}服\UTF{52A1}，是一件非常挑\UTF{6218}的事 。服\UTF{52A1}\UTF{9009}\UTF{62E9} 的\UTF{7ED3}果不\UTF{4EC5}直接\UTF{5173}系到服\UTF{52A1}能否成功\UTF{7EC4}合,而且\UTF{5BF9}\UTF{7EC4}合服\UTF{52A1}的\UTF{8D28}量有着至\UTF{5173}重要的影 \UTF{54CD}[1] 。
+
+%A lot of existing studies on QoS-aware service composition.
+%由此可\UTF{89C1}，利用QoS(quality of service)\UTF{9009}\UTF{62E9}服\UTF{52A1}已成\UTF{52A8}\UTF{6001}Web服\UTF{52A1}\UTF{7EC4}合\UTF{5B9E}用化的\UTF{5173}\UTF{952E}技\UTF{672F}。目前,国内外的学者在基于QoS的\UTF{52A8}\UTF{6001}Web服\UTF{52A1}\UTF{7EC4}合方面已\UTF{7ECF}做了一些工作,(比如 \UTF{8C01} \UTF{8C01} \UTF{8C01} 之后在ralted work中再提起，或者就在\UTF{8FD9}里\UTF{8BA8}\UTF{8BBA})，但是他\UTF{4EEC}都\UTF{4EC5}\UTF{4EC5}探\UTF{8BA8}了将固定的funciton requirements作\UTF{4E3A}\UTF{8F93}入。
+
+\section{Motivation}
+%Fixed functional requirements -> may lose potential improvement of QoS, difficulty for users to properly define the functional requirements because of uncertainty of the feasibility of requirements given available services
+%\UTF{8BA8}\UTF{8BBA}固定fun的不好　-->   它会\UTF{5BFC}致没法找到更好的qos
+
+%当\UTF{4F60}\UTF{4E3A}了\UTF{6EE1}足\UTF{4F60}的目的 想出一个固定的functional requirement（固定功能，最\UTF{4F18}化qos），将它\UTF{8F93}入一个系\UTF{7EDF}，\UTF{4F60}是没有\UTF{529E}法直\UTF{89C2}地判断它所得出的  workflow的QoS\UTF{503C}到底是\UTF{6EE1}足\UTF{4F60}目的（不是\UTF{4F60}的funcitonal requiremnet） 的全局最\UTF{4F18}的 \UTF{8FD8}是不是 。很有可能\UTF{4F60}的要求太\UTF{4E25}格了，\UTF{5BFC}致原本功能弱一点（但也\UTF{6EE1}足\UTF{4F60}目的）的workflow不在\UTF{4F60}的搜索空\UTF{95F4}内。又或者是\UTF{4F60}制定functional requirement太片面，没将\UTF{5B9E}\UTF{9645}上功能上超\UTF{989D}\UTF{6EE1}足\UTF{4F60}要求的function放入\UTF{4F60}的搜索空\UTF{95F4}，\UTF{5BFC}致\UTF{4E27}失了找到    funciton也\UTF{5F3A}\UTF{8FC7}\UTF{4F60} QoS也\UTF{5F3A}\UTF{8FC7}\UTF{4F60}的 workflow。
+%\UTF{6362}言之，\UTF{4F60}的目的 和\UTF{4F60}\UTF{9009}定的 functional requirement很可能有gap，而且\UTF{8FD9}个是不自\UTF{89C9}的。我\UTF{4EEC}可以\UTF{8BB2}\UTF{4E24}个故事。
+%第一个例子：
+%web service providers want to create a service which use S1 or S2 as first service of workflow.
+%service purpose: help user to rental a car for shopping
+%if providers insist “can search any car” as input part of functional requirements, he will not find the best solution !
+
+%第二个例子：
+%s1: 在amazon\UTF{4E70}一\UTF{79CD}特殊的米 s2:在米的\UTF{4E13}\UTF{5356}店（网上）一\UTF{79CD}特殊的米
+%service purpose: \UTF{4E70}相同\UTF{79CD}\UTF{7C7B} 价格最便宜的米
+%由于制造者\UTF{4EC5}\UTF{4EC5}依靠自己的\UTF{7ECF}\UTF{9A8C} \UTF{89C9}得\UTF{4E13}\UTF{5356}店便宜，于是就\UTF{8BBE}定功能\UTF{4E3A}只能“\UTF{4E13}\UTF{95E8}\UTF{4E70}米”，将能\UTF{4E70}其他\UTF{4E1C}西的（比“只能\UTF{4E70}米”功能\UTF{5F3A}的）服\UTF{52A1}排除在搜索范\UTF{56F4}之外。\UTF{5B9E}\UTF{9645}上，amazon由于其大平台，方便的物流，快捷的付\UTF{8D39}，很可能在可靠性，response time ，price，\UTF{80DC}\UTF{8FC7}\UTF{4E13}\UTF{5356}店。
+
+%于是，\UTF{4E3A}了解决\UTF{8FD9}个gap，我所制造的新系\UTF{7EDF} 比起  之前的固定死funcitonal requirement的老旧系\UTF{7EDF} ，更加柔\UTF{8F6F}地\UTF{5BF9}待functional requirement, \UTF{9002}当\UTF{6269}大搜索空\UTF{95F4}， 以希望能\UTF{591F}得到更好QoS，并且\UTF{6EE1}足user目的的serivce。
+
+
 %我\UTF{4EEC}的目的
 \section{Contributions}
+%Tis paper ... (summary of the remainder).
+%本文的主\UTF{9898}，在\UTF{54EA}里干了什\UTF{4E48}%
+
+%我\UTF{4EEC}在第二章介\UTF{7ECD}了有\UTF{5173}service composition背景知\UTF{8BC6}的具体定\UTF{4E49}，在第三章介\UTF{7ECD}了解决service composition\UTF{5173}\UTF{8054}研究，在第四章介\UTF{7ECD}了EXTENDED COMPOSITION PROBLEM,它在原本的\UTF{95EE}\UTF{9898}定\UTF{4E49}上有了\UTF{6269}\UTF{5F20}。在第五章我\UTF{4EEC}介\UTF{7ECD}了怎\UTF{6837}快速有效地解决EXTENDED COMPOSITION PROBLEM 的算法。第六章\UTF{8BC4}价了第四章所\UTF{8BF4}的\UTF{8FD9}个\UTF{6269}\UTF{5F20}定\UTF{4E49}所\UTF{5E26}来的好\UTF{5904}，同\UTF{65F6}也\UTF{8BC4}价了第五章中 \UTF{4F18}化速度的算法的 \UTF{4F18}化程度。第七\UTF{5F20}\UTF{8BA8}\UTF{8BBA}了第六章所做的\UTF{8BC4}价的意\UTF{4E49}。第八\UTF{5F20}%
+\subsection{EXTENDED COMPOSITION PROBLEM}
+%我\UTF{4EEC}%
+\subsection{ALGORITHM FOR EXTENDED COMPOSITION PROBLEM}
+\subsection{Evaluation}
+Chapter 2 describes ... Chapter 3...
+%\UTF{6BCF}一章做了什\UTF{4E48}%
 %本文的\UTF{8D21}献
 \cite{4065825}. 
 %-------------------
@@ -100,6 +144,9 @@ In this paper, S $\subset$ S' is referred to as S' is output-stronger than S, an
 
 \section{Functional requirements}
 %用\UTF{6237}想要合成的大service的 功能，也就是\UTF{8F93}入type和\UTF{8F93}出type
+%Functional requirements f: for a workflow template W
+%f = (i,o) , where i ⊂ W.fisrt_task.I, o ⊂ W.last_task.O In my research,
+%f = (a set of W.fisrt_task.services, a set of W.last_task.services)
 
 \section{Workflow}
 ~~~~A workflow is a sequence of two or more linked services. The functions of a workflow depend on function combinations that consist of the input parameter of the workflow's first service and the output parameter of the workflow's last service. A workflow template contains service tasks instead of actual services. A task is characterised as an abstract functionality which can be replaced by an actual service. There are generally two ways to assign services to a task, one is to compare the functions of the services with the functional requirements of the task. The other is to collect services depend on documents such as service description, which are usually distributed with the service by provider. Finally, each task is assigned with a set of services which meet the functional requirements of the task.
@@ -107,14 +154,20 @@ In this paper, S $\subset$ S' is referred to as S' is output-stronger than S, an
 Selection algorithms receive a workflow template with fixed functional requirement and a dozens of services, and select for each task of one or more services which guarantee the obtained workflow's QoS are optimised, then return the obtained workflow as an output.
 
 %Figure 1 shows an example workflow template and a possible service selection. may be add after
-%Functional requirements: ぶれなし (existing)
+
 
 
 \section{QoS optimization}%有空找找看\UTF{7C7B}似的。\UTF{8BF4}好我\UTF{4EEC}\UTF{8FD9}里是不考\UTF{8651}QoS限制的
 %this time single-objective
 \section{Service composition}
 %我用一下式子給service composition\UTF{8FDB}行一个原始的定\UTF{4E49}：
-%input：固定的workflow template 一群service, function requirements，output：最\UTF{4F18}的workflow
+%service composition[1]: a system to solve composition problem 
+%existing composition problem definition:
+%input: a workflow template, a number of services, function requirements
+%output: QoS best workflow and its QoS
+%existing algorithm of service composition: GA, ACO,...
+
+%Functional requirements: ぶれなし (existing)
 \chapter{Related  work}
 %今天决定要写几个，可以从之前的\UTF{8BBA}文中\UTF{9009} 1000字
 
@@ -126,6 +179,17 @@ Selection algorithms receive a workflow template with fixed functional requireme
 %在第二个section我\UTF{4EEC}介\UTF{7ECD}了解决上述\UTF{95EE}\UTF{9898}的具体算法。第一，我\UTF{4EEC}在section？？中先解\UTF{91CA}下如何将\UTF{6BCF}一个task中的service\UTF{4EEC}clustering化。clustering化的好\UTF{5904}有\UTF{5565}？clustering之后，相\UTF{5BF9}于一\UTF{5F20}task就能有一\UTF{5F20}“地\UTF{56FE}”，可以在之后的skyline算法的\UTF{65F6}候参照它利用它。第二，我\UTF{4EEC}在subsection？？中介\UTF{7ECD}了skyline的算法。比起用全探索，skyline算法可以有效地\UTF{51CF}少\UTF{8BA1}算量，\UTF{8FD9}\UTF{8BA9}整个系\UTF{7EDF}的可行性大大\UTF{589E}加，我\UTF{4EEC}之后的\UTF{8BA1}算都是基于skyline算法的。第三，我\UTF{4EEC}在第subsection？？中介\UTF{7ECD}了naive algorithm，它在skyline算法的基\UTF{7840}上，\UTF{7B80}\UTF{5355}地将9\UTF{79CD}可能的bure情况分\UTF{522B}\UTF{8FD0}算，然后根据得到的9个\UTF{7ED3}果，互相比\UTF{8F83}之后得出最好的\UTF{7ED3}果后\UTF{7ED9}用\UTF{6237}\UTF{8FDB}行推荐。第四，我\UTF{4EEC}在subsection？？中介\UTF{7ECD}了development algorithm，它在naive的基\UTF{7840}上改\UTF{8FDB}了算法，\UTF{7B80}\UTF{5355}来\UTF{8BF4}，根据是否\UTF{62E5}有相同\UTF{5F00}\UTF{5934}来将9\UTF{79CD}可能分成3\UTF{7EC4}，一\UTF{7EC4}3\UTF{79CD}可能。比起naive algorithm，它也有效地\UTF{51CF}少了\UTF{8BA1}算量
 
 \section{Extended Composition Problem}: Proposal1 %1-20 bure\UTF{95EE}\UTF{9898}的定\UTF{4E49}%
+%motivation again
+%ぶれありのcomposition problem定義
+%def. 何段階ずれてもよい
+%(actually, not so meaningful to use too weak services)
+
+
+%put forward the concept of Variation: to a functional requirement = (i, o),
+%where i = a set of W.fisrt_task.services, o = a set of W.last_task.services
+%adjust (i, o) into (i’, o’), where i’ and o’ is stronger or weaker than i and o’ for obtaining a Variation function (i, o)
+%最好\UTF{8BF4}明它的意\UTF{4E49}\UTF{8FD8}有\UTF{4E3A}什\UTF{4E48}\UTF{8FD9}\UTF{4E48}\UTF{8BBE}定(optional)
+
 %就如同我之前在section。。所提到的，由于 能否\UTF{6EE1}足funcitonal requirements\UTF{8FD9}件事并不是那\UTF{4E48}明\UTF{663E}  所以\UTF{4E25}格将用\UTF{6237}所提出的funcitonal requirements作\UTF{4E3A}service composition system的\UTF{8F93}入的\UTF{8BDD}，会存在\UTF{6EE1}足功能的workflow不存在，或者是 由于探索空\UTF{95F4}的不足而\UTF{5BFC}致找不到真正最\UTF{4F18}qos的workflow的情况出\UTF{73B0}。我\UTF{4EEC}\UTF{9488}\UTF{5BF9}\UTF{8FD9}个\UTF{95EE}\UTF{9898}，提出了不\UTF{4EC5}探索fixed functional requirements，并且同\UTF{65F6}探索它的Bure 的解决方案。我\UTF{4EEC}首先引\UTF{8FDB}以下的定\UTF{4E49}%
 
 %%%\UTF{8FD9}段不用翻\UTF{8BD1}%
@@ -134,7 +198,42 @@ Selection algorithms receive a workflow template with fixed functional requireme
 %\UTF{5BF9}于一个start service 它的Weak集合是 在同一task中input weaker than it（但是不包含自己）。特\UTF{522B}的，one_weak集合是指，Weak中的 start service相\UTF{8FDE}接 的subset
 %\UTF{5BF9}于一个end service 它的Strong 集合 是在同一task中output stronger than it（但是不包含自己）
 %\UTF{5BF9}于一个end service 它的Weak集合是 在同一task中ouput weaker than it（但是不包含自己）。特\UTF{522B}的，one_weak集合是指，Weak中的 end service相\UTF{8FDE}接 的subset
-%\UTF{5BF9}于一群start或者end services的集合 \UTF{8FD9}个集合的Strong集合就是各个service的strong集合的并集，\UTF{8FD9}个集合的weak集合就是各个service的one_weak集合的并集（但是不包含自己）
+%\UTF{5BF9}于一群start或者end services的集合 \UTF{8FD9}个集合的Strong集合就是各个service的strong集合的并集，\UTF{8FD9}个集合的weak集合就是各个service的one_weak集合的并集（但是不包含自己)
+
+%the concept of Strong and Weak:
+%to a service s ∈ fisrt_task, Strong(s) : {s’ ∈ fisrt_task, s.I \UTF{228A} s’.I}
+%to a service s ∈ fisrt_task, Weak(s) : {s’ ∈ fisrt_task, s’.I \UTF{228A} s.I and s’ adjoin s}. Too weak service is not expected
+%to a service s ∈ last_task, Strong(s) : {s’ ∈ last_task, s.I \UTF{228A} s’.I}
+%to a service s ∈ last_task, Weak(s) : {s’ ∈ last_task, s’.I \UTF{228A} s.I and s’ adjoin s}. Too weak service
+%is not expected
+%to a set of service S ⊂ first_task, Strong(S) : Union(Strong(every s ∈ S))
+%to a set of service S ⊂ first_task, Weak(S) : Union(Weak(every s ∈ S)) to a set of service S ⊂ last_task, Strong(S) : Union(Strong(every s ∈ S)) to a set of service S ⊂ last_task, Weak(S) : Union(Weak(every s ∈ S))
+
+%to a functional requirement FQ = (i, o), where i = a set of W.fisrt_task.services,
+%o = a set of W.last_task.services
+%There are 8 kind of basic Variation: FQ(s,s), FQ(s,f), FQ(s,w), FQ(f,s), FQ(f,w), FQ(w,s), FQ(w,f), FQ(w,w),
+%where s = Strong(i) or Strong(o), f = fixed(i) or fixed(o), w = Weak(i) or Weak(o). The former element apply i, latter element apply o
+
+%There are 3 degrees of Variation:
+%FQcompatible = FQ ∪ FQ(s,s) ∪ FQ(s,f) ∪ FQ(f,s) , where compatible means functional compatible
+%FQtrade-off = FQ ∪ FQ(s,s) ∪ FQ(s,f) ∪ FQ(f,s) ∪ FQ(w,s) ∪ FQ(s,w), where trade-off means functional trade-off
+%FQcompromise = FQ ∪ FQ(s,s) ∪ FQ(s,f) ∪ FQ(f,s) ∪ FQ(w,s) ∪ FQ(s,w) ∪ FQ(f,w) ∪ FQ(w,f) ∪ FQ(w,w), where compromise means functional compromise
+
+%extended composition problem definition:
+%input: a workflow template, a number of services, function requirement, the degree of Variation
+%procedure: According to the degree of Variation, calculate new function requirement, then the new system take each basic Variation in it as input
+%output: each basic Variation’s QoS best workflow and its QoS, then generate a Scheme as selection advice to user.
+
+%Scheme: some local QoS best workflows which belong to different basic Variation
+%How to generate Scheme:
+%step1: calculate each basic Variation’s QoS best workflow and its QoS as each node
+%step2: refer to graph in the right and Scheme algorithm below
+%for each node:
+%if this node’s QoS is greater than every node it can get to:
+%add it to Scheme
+%figure
+
+
 %%%\UTF{8FD9}段不用翻\UTF{8BD1}%
 
 %在QoS不降低的情况下提高多少程度的功能都是很\UTF{4E50}意被人看到的（be expected），但是如果qos提高是以功能的\UTF{51CF}弱\UTF{4E3A}代价的\UTF{8BDD}，那\UTF{4E48}\UTF{51CF}弱的程度必\UTF{987B}要有个限制(actually, not so meaningful to use too weak services)。this paper中，我\UTF{4EEC}只取功能降低一段（隣接）的weak，将功能的\UTF{51CF}弱控制在\UTF{8F83}低范\UTF{56F4}。
@@ -143,41 +242,65 @@ Selection algorithms receive a workflow template with fixed functional requireme
 %接下来我\UTF{4EEC}定\UTF{4E49}bure\UTF{95EE}\UTF{9898}：
 %\UTF{5BF9}于functional requirement = (fixed_start, fixed_end)，我\UTF{4EEC}不\UTF{4EC5}\UTF{4EC5}在原来的\UTF{95EE}\UTF{9898}\UTF{8BBE}定的基\UTF{7840}上（参考service composition）\UTF{8BA1}算它，\UTF{8FD8}\UTF{8BA1}算以start_bure  ＊ end_bure \UTF{4E3A}\UTF{5934}尾的function 的9\UTF{79CD}function中的剩余8\UTF{79CD}。然后\UTF{8F93}出（fixed,fixed）和 剩下8\UTF{79CD}中比它QoS高的
 
-
-
-%motivation again
-
-%ぶれありのcomposition problem定義
-%def. 何段階ずれてもよい
-%(actually, not so meaningful to use too weak services)
-
-
 \section{Algorithm for Extended Composition Problem}: Proposal 2%1-20 bure\UTF{95EE}\UTF{9898}的具体算法
 %我\UTF{4EEC}在\UTF{8FD9}个section中\UTF{8BF4}明\UTF{8FD9}\UTF{4E48}具体地，一\UTF{6B65}\UTF{6B65}地解决上面的\UTF{95EE}\UTF{9898}%
-\subsection{Functionality Graph}%\UTF{9636}\UTF{5C42}化
+%\subsection{Functionality Graph}%\UTF{9636}\UTF{5C42}化
 %From [Wagner'11]
 %def.
 %algorithm
 %在[Wagner'11]中，它定\UTF{4E49}了functionality graph。如何\UTF{8BA1}算functional graph：将同一task中的services做\UTF{4E3A}\UTF{8F93}入，根据他\UTF{4EEC}之\UTF{95F4}的output的service Compliance\UTF{5173}系 ，（\UTF{8FD9}里改写下，直接英\UTF{8BED}）插入\UTF{4E24}\UTF{5F20}\UTF{56FE}（\UTF{4F2A}代\UTF{7801}可有可无，写\UTF{4F2A}代\UTF{7801}太\UTF{70E6}了）
 %
 
-
 \subsection{Skyline}%skyline 算是准\UTF{5907}工作
 %def.
 %algorithm
 %算法的意\UTF{4E49}，吃了什\UTF{4E48}吐了什\UTF{4E48}（文字）：
 %算法\UTF{4F2A}代\UTF{7801}：（先用手写）
+
+
+%Full search algorithm: using dfs algorithm, but slow
+%\UTF{2022} Skyline algorithm: apply function selection at every search step
+%def selection(service_list):
+%\UTF{2022}%
+%\UTF{2022} ans={}
+%\UTF{2022} Next = Union(every service in service_list.next)
+%\UTF{2022}%
+%while Next != {}:
+%s = QoS best in service_list and s.next != {}
+%\UTF{2022} addstoans
+%\UTF{2022} service_list = service_list - s
+%\UTF{2022} service.next = service.next - s.next return ans
+
+
+
 %算法的\UTF{8BF4}明
 
 \subsection{Naive Algorithm}%naive
 %能写的\UTF{5E94}\UTF{8BE5}不多，input output 重申一下（注意 \UTF{8FD9}里的output是“方案”），吐槽一下怎\UTF{4E48}怎\UTF{4E48}不行就走
 %for all 機能のぶれ (same, IN_one_weak-OUT_same, IN_same-OUT_one_weak, ...)
  % solve
+ 
+%Naive Variation algorithm:
+%for basic_variation in degree of variation:
+%Skyline(basic_variation)
+%put the local best QoS into temp_ans Scheme(temp_ans)
+ 
 
 \subsection{Developed Algorithm}%\UTF{641E}个牛逼的名字
 %bure算法是基于naive算法的改\UTF{8FDB}算法。
 %\UTF{8865}上算法1-22写 1-21日已\UTF{7ECF}没\UTF{8111}子了
 
+%divide basic_variation in degree of variation into some groups by whether containing the same input
+
+%APPROACH
+%ALGORITHM FOR EXTENDED COMPOSITION PROBLEM
+%Developed Variation algorithm:
+%for each group: Skyline(group.input)
+%put the local best QoS into temp_ans Scheme(temp_ans)
+
+%FQcompatible = [FQ, FQ(f,s) ], [FQ(s,f), FQ(s,s) ]
+%FQtrade-off = [FQ, FQ(f,s) ], [FQ(s,f), FQ(s,s), FQ(s,w)], [FQ(w,s)]
+%FQcompromise = [FQ(s,f), FQ(s,s), FQ(s,w)],[FQ, FQ(f,s), FQ(f,w)],[FQ(w,f), FQ(w,s), FQ(w,w)]
 
 
 \chapter{Experiments}
@@ -199,6 +322,9 @@ How QoS can be improved by allowing compromise in functional requirements?
 %\UTF{8BC4}价\UTF{8BD5}\UTF{9A8C}\UTF{8BBE}\UTF{8BA1}：\UTF{8BA1}算了1000回（\UTF{8FD9}里\UTF{5BF9}回要有定\UTF{4E49}：将input集\UTF{9F50}，投入system\UTF{8FDB}行一次\UTF{8BA1}算叫做回，定\UTF{4E49}在service composition中），\UTF{5BF9}比\UTF{5BF9}象 1\UTF{8BA1}算固定functional requiments所得出的qos  2  9\UTF{79CD}不同情况的bure function下的qos。
 %得出的\UTF{7ED3}果如下\UTF{56FE}所示（\UTF{56FE}表）。#我\UTF{4EEC}可以看到8\UTF{79CD}情况的表\UTF{73B0}。\UTF{8FD9}\UTF{6837}看可能不直\UTF{89C2}。(可能不要，没多大用)
 
+%calculate 1000 times random service composition problem
+%Scheme improvement degree: Σ element’s improvement of Scheme
+
 %（考\UTF{8651}将\UTF{8FD9}个定\UTF{4E49}放在之前）如何\UTF{8BC4}价方案的好坏：将方案的所有“\UTF{9009}\UTF{62E9}” 比起fixed的改\UTF{8FDB}比例 相加，\UTF{8FD9}个数\UTF{503C}越高方案越好。
 
 %我\UTF{4EEC}根据\UTF{5BF9}bure的function的容忍程度 \UTF{8FDB}一\UTF{6B65}\UTF{5BF9}8\UTF{7EC4}的情况\UTF{8FDB}行情况的分\UTF{7C7B}。
@@ -218,37 +344,42 @@ How QoS can be improved by allowing compromise in functional requirements?
 \section{Algorithm}
 Evaluation of Proposal 2\\
 How fast can the proposed algorithm solve the extended problem?\\
-- with skyline vs. without skyline\\
+Skyline vs Full search:\\
+%step numbers: search from a service to a next service called one step
 Fig. x depicts the relationship of step numbers between full search and skyline algorithm.
-\[\includegraphics[width=13cm]{eval1.pdf}\]
+\[\includegraphics[width=13cm]{eval1.png}\]
 By further calculation, the correlation between them is measured to be 0.1814083, which demonstrate the existence of weak correlation.\\
+
 %我\UTF{4EEC}可以看到step numbers 降到1/1992，（再加一个\UTF{65F6}\UTF{95F4}\UTF{56FE}）。
 %further eval：有\UTF{4E24}个\UTF{53D8}量。task数和workflow数（算了 之后再考\UTF{8651} 估\UTF{8BA1}没\UTF{65F6}\UTF{95F4}。2月\UTF{4EFD}做\UTF{5427}）
 %全探索的探索空\UTF{95F4}是task内的services数 的 task\UTF{603B}数次方。
 %skyline之后的探索空\UTF{95F4}是（skyline之后的task内的services数）。。有点算不出来。要\UTF{8BBE}\UTF{8BA1}\UTF{5B9E}\UTF{9A8C}的\UTF{8BDD}：1 保持task数不\UTF{53D8} \UTF{589E}加\UTF{6BCF}个task内的services数 2 保持task内的service不\UTF{53D8}，\UTF{589E}加task的\UTF{603B}数
 
 - with skyline vs. proposed algorithm with skyline
-%\UTF{8FD9}里想\UTF{529E}法\UTF{7F29}成一幅\UTF{56FE}。或者按照老\UTF{5E08}的\UTF{8BF4}法 做成worst best average\UTF{56FE}。无\UTF{8BBA}如何 算一个\UTF{65F6}\UTF{95F4}\UTF{5427}。（将写写入去掉 只\UTF{8BA1}算\UTF{65F6}\UTF{95F4}（将\UTF{65F6}\UTF{95F4}\UTF{8F93}出到csv中 ），今天\UTF{665A}上\UTF{8DD1}）
-\[\includegraphics[width=13cm]{eval3-1.pdf}\]
-\[\includegraphics[width=13cm]{eval3-2.pdf}\]
-\[\includegraphics[width=13cm]{eval3-3.pdf}\]
+\[\includegraphics[width=13cm]{eval3.png}\]
+
 
 \chapter{Discussion}
-% related work can come here
+% related work can come here \UTF{626F}淡\UTF{5427}%
 
 \subsection{Proposal}
 The extended problem should be significant because in the experiment
+%改\UTF{8FDB}的\UTF{95EE}\UTF{9898}定\UTF{4E49}\UTF{663E}著地改\UTF{8FDB}了
 
-The proposed algorithm made good improvement because in the experiment 
+The proposed algorithm made good improvement because in the experiment
 
 % if difficult, combine to the experiment chapter
 
 \subsection{Future Work}
 - QoS constraints
+
 - adaptive
 
+- change scability
 
 \chapter{Conclusion}
+
+copy abstract
 
 %-------------------
 \bibliographystyle{plain} 

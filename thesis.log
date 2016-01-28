@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015) (preloaded format=platex 2015.11.17)  25 JAN 2016 12:20
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015) (preloaded format=platex 2015.11.17)  28 JAN 2016 21:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -90,6 +90,11 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 2.
+
+Overfull \hbox (3.67145pt too wide) in paragraph at lines 6--6
+ [][] []\OT1/cmr/m/n/10.95 ALGORITHM FOR EX-TENDED COM-PO-SI-TION PROB- 
+ []
+
 )
 \tf@toc=\write3
 \openout3 = `thesis.toc'.
@@ -100,18 +105,23 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 ]
 Chapter 1.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 51.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 61.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 51.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 61.
+
+Overfull \hbox (2.7703pt too wide) in paragraph at lines 92--92
+[]\OT1/cmr/bx/n/10.95 ALGORITHM FOR EX-TENDED COM-PO-SI-TION PROB-LEM 
+ []
+
 [1
 
 
 ]
 Chapter 2.
 LaTeX Font Info:    Font shape `JT1/gt/m/it' in size <10.95> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 65.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 105.
 LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <10.95> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 65.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 105.
 [2
 
 ] [3]
@@ -126,34 +136,29 @@ Chapter 4.
 Chapter 5.
 File: eval2.pdf Graphic file (type pdf)
 <eval2.pdf>
-File: eval1.pdf Graphic file (type pdf)
- <eval1.pdf> [6
+File: eval1.png Graphic file (type bmp)
+ <eval1.png> [6
 
 ]
-File: eval3-1.pdf Graphic file (type pdf)
- <eval3-1.pdf>
-File: eval3-2.pdf Graphic file (type pdf)
- <eval3-2.pdf> [7]
-File: eval3-3.pdf Graphic file (type pdf)
- <eval3-3.pdf>
-[8]
+File: eval3.png Graphic file (type bmp)
+ <eval3.png> [7]
 Chapter 6.
-[9
+[8
 
 ]
 Chapter 7.
-(./thesis.bbl [10
+(./thesis.bbl [9
 
-]) [11
+]) [10
 
 ] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 788 strings out of 493777
- 9675 string characters out of 6151333
- 69737 words of memory out of 5000000
- 4318 multiletter control sequences out of 15000+600000
+ 783 strings out of 493777
+ 9583 string characters out of 6151333
+ 70737 words of memory out of 5000000
+ 4316 multiletter control sequences out of 15000+600000
  15049 words of font info for 58 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  25i,5n,21p,1343b,243s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (15 pages, 21024 bytes).
+Output written on thesis.dvi (14 pages, 21440 bytes).
