@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015) (preloaded format=platex 2015.11.17)  31 JAN 2016 14:49
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015) (preloaded format=platex 2015.11.17)  1 FEB 2016 20:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -49,36 +49,73 @@ eX Live/ChoF)
 \Gin@req@height=\dimen119
 \Gin@req@width=\dimen120
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count90
+\lst@gtempboxa=\box43
+\lst@token=\toks16
+\lst@length=\count91
+\lst@currlwidth=\dimen121
+\lst@column=\count92
+\lst@pos=\count93
+\lst@lostspace=\dimen122
+\lst@width=\dimen123
+\lst@newlines=\count94
+\lst@lineno=\count95
+\lst@maxwidth=\dimen124
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
+\c@lstnumber=\count96
+\lst@skipnumbers=\count97
+\lst@framebox=\box44
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2014/09/06 1.5e listings configuration
+))
+Package: listings 2014/09/06 1.5e (Carsten Heinz)
+
+(./jlisting.sty
+Package: jlisting 2006/02/20 0.2 (Thor)
+\lst@nextchar=\count98
+\lst@inputfile=\read1
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2014/09/06 1.5e listings language file
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
+)
 (./thesis.aux)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+\c@lstlisting=\count99
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 14.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 38.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 14.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 38.
  [1
 
 ] [2]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 28.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 52.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 28.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 52.
  [3] (./thesis.toc
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10.95> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
@@ -105,33 +142,49 @@ Overfull \hbox (3.67145pt too wide) in paragraph at lines 6--6
  [5]
 Chapter 1.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 62.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 84.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 62.
-
-Overfull \hbox (2.7703pt too wide) in paragraph at lines 99--99
-[]\OT1/cmr/bx/n/10.95 ALGORITHM FOR EX-TENDED COM-PO-SI-TION PROB-LEM 
- []
-
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 84.
 [1
 
 
 ]
+File: intro.png Graphic file (type bmp)
+ <intro.png> [2]
+Overfull \hbox (2.7703pt too wide) in paragraph at lines 126--126
+[]\OT1/cmr/bx/n/10.95 ALGORITHM FOR EX-TENDED COM-PO-SI-TION PROB-LEM 
+ []
+
+[3]
 Chapter 2.
 LaTeX Font Info:    Font shape `JT1/gt/m/it' in size <10.95> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 113.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 140.
 LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <10.95> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 113.
-[2
-
-] [3]
-Chapter 3.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 140.
 [4
 
 ]
+File: workflow.png Graphic file (type bmp)
+ <workflow.png>
+Overfull \hbox (2.7148pt too wide) detected at line 175
+\OML/cmm/m/it/10.95 Figure\OT1/cmr/m/n/10.95 2 : \OML/cmm/m/it/10.95 Workflow [
+]template []with []service []tasks []and []its []corresponding []services
+ []
+
+
+Overfull \hbox (0.49757pt too wide) in paragraph at lines 188--189
+\OT1/cmr/m/n/10.95 where start ser-vices = a set of W.FT.services, end ser-vice
+s = a set of W.IT.services 
+ []
+
+[5] [6]
+Chapter 3.
+[7
+
+] [8]
 Chapter 4.
 
-Overfull \hbox (34.2152pt too wide) detected at line 236
+Overfull \hbox (34.2152pt too wide) detected at line 254
 \OML/cmm/m/it/10.95 Variation \OT1/cmr/m/n/10.95 = (\OML/cmm/m/it/10.95 i[]; o[
 ]\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; where []i[] \OMS/cmsy/m/n/10.95 ^^Z 
 \OML/cmm/m/it/10.95 P\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 Strong\OT1/cmr/m/n
@@ -144,10 +197,16 @@ i\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; o[] \OMS/cmsy/m/n/10.95 ^^Z \OML/cmm
 r/m/n/10.95 )
  []
 
-[5
+[9
 
 ]
-Overfull \hbox (63.9112pt too wide) detected at line 281
+File: variation1.png Graphic file (type bmp)
+ <variation1.png>
+File: variation2.png Graphic file (type bmp)
+ <variation2.png>
+File: variation3.png Graphic file (type bmp)
+ <variation3.png> [10]
+Overfull \hbox (63.9112pt too wide) detected at line 317
 \OML/cmm/m/it/10.95 FQ[] \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 FQ \OMS/cmsy/
 m/n/10.95 [ \OML/cmm/m/it/10.95 FQ[] \OMS/cmsy/m/n/10.95 [ \OML/cmm/m/it/10.95 
 FQ[] \OMS/cmsy/m/n/10.95 [ \OML/cmm/m/it/10.95 FQ[] \OMS/cmsy/m/n/10.95 [ \OML/
@@ -156,33 +215,61 @@ n/10.95 [ \OML/cmm/m/it/10.95 FQ[] \OMS/cmsy/m/n/10.95 [ \OML/cmm/m/it/10.95 FQ
 [] \OMS/cmsy/m/n/10.95 [ \OML/cmm/m/it/10.95 FQ[]
  []
 
-[6]
+File: scheme.png Graphic file (type bmp)
+<scheme.png> [11]
+File: skyline1.png Graphic file (type bmp)
+ <skyline1.png>
+File: skyline2.png Graphic file (type bmp)
+ <skyline2.png>
+Overfull \hbox (9.73334pt too wide) detected at line 408
+[] [] [] [] [][]
+ []
+
+[12]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 421.
+
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 421.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 426.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 426.
+
+Overfull \hbox (9.10553pt too wide) in paragraph at lines 433--434
+[]\OT1/cmr/m/n/10.95 Advantages of sky-line al-go-rithm over full search could 
+be il-lus-trated by analysing
+ []
+
+[13] [14]
 Chapter 5.
 File: eval2-1.png Graphic file (type bmp)
-<eval2-1.png>
+<eval2-1.png> [15
+
+]
 File: eval1.png Graphic file (type bmp)
  <eval1.png>
 File: eval3.png Graphic file (type bmp)
- <eval3.png> [7
-
-] [8]
+ <eval3.png> [16] [17]
 Chapter 6.
-[9
+[18
 
-]
+] [19]
 Chapter 7.
-(./thesis.bbl [10
+(./thesis.bbl [20
 
-]) [11
+]) [21
 
 ] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 782 strings out of 493777
- 9585 string characters out of 6151333
- 71737 words of memory out of 5000000
- 4316 multiletter control sequences out of 15000+600000
- 15049 words of font info for 58 fonts, out of 8000000 for 9000
+ 2346 strings out of 493777
+ 32102 string characters out of 6151333
+ 176905 words of memory out of 5000000
+ 5838 multiletter control sequences out of 15000+600000
+ 15513 words of font info for 60 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 25i,5n,21p,1898b,243s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 26i,6n,49p,1898b,1617s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (16 pages, 29596 bytes).
+Output written on thesis.dvi (26 pages, 75912 bytes).

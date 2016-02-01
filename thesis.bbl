@@ -1,9 +1,66 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
-\bibitem{4065825}
-E.~Goto.
-\newblock The parametron, a digital computing element which utilizes parametric
-  oscillation.
-\newblock {\em Proceedings of the IRE}, 47(8):1304--1316, 1959.
+\bibitem{alrifai2010selecting}
+Mohammad Alrifai, Dimitrios Skoutas, and Thomas Risse.
+\newblock Selecting skyline services for qos-based web service composition.
+\newblock In {\em Proceedings of the 19th international conference on World
+  wide web}, pages 11--20. ACM, 2010.
+
+\bibitem{griffiths2004finding}
+Thomas~L Griffiths and Mark Steyvers.
+\newblock Finding scientific topics.
+\newblock {\em Proceedings of the National Academy of Sciences}, 101(suppl
+  1):5228--5235, 2004.
+
+\bibitem{hofmann1999probabilistic}
+Thomas Hofmann.
+\newblock Probabilistic latent semantic indexing.
+\newblock In {\em Proceedings of the 22nd annual international ACM SIGIR
+  conference on Research and development in information retrieval}, pages
+  50--57. ACM, 1999.
+
+\bibitem{paolucci2002semantic}
+Massimo Paolucci, Takahiro Kawamura, Terry~R Payne, and Katia Sycara.
+\newblock Semantic matching of web services capabilities.
+\newblock In {\em The Semantic Web―ISWC 2002}, pages 333--347. Springer, 2002.
+
+\bibitem{papazoglou2008service}
+Michael~P Papazoglou, Paolo Traverso, Schahram Dustdar, and Frank Leymann.
+\newblock Service-oriented computing: a research roadmap.
+\newblock {\em International Journal of Cooperative Information Systems},
+  17(02):223--255, 2008.
+
+\bibitem{wagner2011qos}
+Florian Wagner, Fuyuki Ishikawa, and Shinichi Honiden.
+\newblock Qos-aware automatic service composition by applying functional
+  clustering.
+\newblock In {\em Web Services (ICWS), 2011 IEEE International Conference on},
+  pages 89--96. IEEE, 2011.
+
+\bibitem{wagner2012towards}
+Florian Wagner, Benjamin Kl{\"o}pper, Fuyuki Ishikawa, and Shinichi Honiden.
+\newblock Towards robust service compositions in the context of functionally
+  diverse services.
+\newblock In {\em Proceedings of the 21st international conference on World
+  Wide Web}, pages 969--978. ACM, 2012.
+
+\bibitem{yu2007efficient}
+Tao Yu, Yue Zhang, and Kwei-Jay Lin.
+\newblock Efficient algorithms for web services selection with end-to-end qos
+  constraints.
+\newblock {\em ACM Transactions on the Web (TWEB)}, 1(1):6, 2007.
+
+\bibitem{zeng2003quality}
+Liangzhao Zeng, Boualem Benatallah, Marlon Dumas, Jayant Kalagnanam, and Quan~Z
+  Sheng.
+\newblock Quality driven web services composition.
+\newblock In {\em Proceedings of the 12th international conference on World
+  Wide Web}, pages 411--421. ACM, 2003.
+
+\bibitem{zhang2007diga}
+Chengwen Zhang, Sen Su, and Junliang Chen.
+\newblock Diga: Population diversity handling genetic algorithm for qos-aware
+  web services selection.
+\newblock {\em Computer Communications}, 30(5):1082--1090, 2007.
 
 \end{thebibliography}
