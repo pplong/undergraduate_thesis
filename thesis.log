@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015) (preloaded format=platex 2015.11.17)  1 FEB 2016 20:44
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015) (preloaded format=platex 2015.11.17)  2 FEB 2016 14:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -127,12 +127,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 2.
-
-Overfull \hbox (3.67145pt too wide) in paragraph at lines 6--6
- [][] []\OT1/cmr/m/n/10.95 ALGORITHM FOR EX-TENDED COM-PO-SI-TION PROB- 
- []
-
-[4
+ [4
 
 
 ])
@@ -150,12 +145,7 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
 
 ]
 File: intro.png Graphic file (type bmp)
- <intro.png> [2]
-Overfull \hbox (2.7703pt too wide) in paragraph at lines 126--126
-[]\OT1/cmr/bx/n/10.95 ALGORITHM FOR EX-TENDED COM-PO-SI-TION PROB-LEM 
- []
-
-[3]
+ <intro.png> [2] [3]
 Chapter 2.
 LaTeX Font Info:    Font shape `JT1/gt/m/it' in size <10.95> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 140.
@@ -260,16 +250,16 @@ Chapter 6.
 Chapter 7.
 (./thesis.bbl [20
 
-]) [21
+] [21
 
-] (./thesis.aux) ) 
+]) [22] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 2346 strings out of 493777
- 32102 string characters out of 6151333
- 176905 words of memory out of 5000000
- 5838 multiletter control sequences out of 15000+600000
+ 2358 strings out of 493777
+ 31987 string characters out of 6151333
+ 175905 words of memory out of 5000000
+ 5850 multiletter control sequences out of 15000+600000
  15513 words of font info for 60 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  26i,6n,49p,1898b,1617s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (26 pages, 75912 bytes).
+Output written on thesis.dvi (27 pages, 79228 bytes).
